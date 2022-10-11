@@ -1,6 +1,7 @@
 
 const ctx = document.querySelector('#chart').getContext('2d');
-
+ctx.canvas.width = 2
+ctx.canvas.height = 2
 const chart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -38,6 +39,8 @@ const chart = new Chart(ctx, {
 
 
 const ctx2 = document.querySelector('#chart2').getContext('2d');
+ctx2.canvas.width = 2
+ctx2.canvas.height = 2
 const chart2 = new Chart(ctx2, {
     type: 'line',
     data: {
@@ -83,7 +86,8 @@ const chart2 = new Chart(ctx2, {
     },
 })
 const ctx3 = document.querySelector('#chart3').getContext('2d');
-
+ctx3.canvas.width = 2
+ctx3.canvas.height = 2
 const chart3 = new Chart(ctx3, {
         type: 'bar',
         data: {
@@ -120,6 +124,8 @@ const chart3 = new Chart(ctx3, {
 );
 
 const ctx4 = document.querySelector('#chart4').getContext('2d');
+ctx4.canvas.width = 2
+ctx4.canvas.height = 2
 const chart4 = new Chart(ctx4, {
     type: 'line',
     data: {
