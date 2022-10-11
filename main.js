@@ -119,5 +119,49 @@ const chart3 = new Chart(ctx3, {
 
 );
 
+const ctx4 = document.querySelector('#chart4').getContext('2d');
+const chart4 = new Chart(ctx4, {
+    type: 'line',
+    data: {
+        labels: ['1990', '1995', '2000', '2005', '2010', '2015', '2020', '2021', '2022'],
+        datasets: [{
+            label: 'Hours of downtime',
+            data: [56, 96, 195, 88, 66, 50, 34, 86, 51],
+            borderColor: ['red'],
+        },
+           ]
 
+    },
+    options: {
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Year 1990-2022'
+                },
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Hours'
+                },
+                grid: {
+                    display: false
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position: "bottom"
+            },
+            title: {
+                display: true,
+                text: 'Aircraft out of service due to birdstrikes'
+            }
+        }
+    },
+})
 
