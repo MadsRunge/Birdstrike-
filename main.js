@@ -170,3 +170,20 @@ const chart4 = new Chart(ctx4, {
         }
     },
 });
+
+const ctx5 = document.querySelector('#chart5').getContext('2d');
+ctx5.canvas.width = 2
+ctx5.canvas.height = 2
+const chart5 = new Chart(ctx5, {
+    type: 'bar',
+    data: {
+        labels: ['Precautionary Landing', 'Aborted Take-off', 'Engine shutdown', 'Avoidance maneuver'],
+        datasets: [{
+            label: 'Effects of birdstrikes',
+            data: [7690, 2891, 2710, 487, 2708],
+            backgroundColor: ['red', 'lightgrey', 'lightgrey', 'lightgrey', 'lightgrey', 'lightgrey']
+        }],
+
+    },
+});
+
