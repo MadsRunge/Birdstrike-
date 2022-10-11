@@ -25,3 +25,51 @@ const chart = new Chart(ctx, {
 );
 
 
+const ctx2 = document.querySelector('#chart2').getContext('2d');
+const chart2 = new Chart(ctx2, {
+    type: 'line',
+    data: {
+        labels: ['1990', '1995', '2000', '2005', '2010', '2015', '2020', '2021', '2022'],
+        datasets: [{
+            label: 'Birdstrikes yearly',
+            data: [2105, 2821, 6002, 7235, 9899, 10109, 11622, 15593, 8362],
+            borderColor: ['red'],
+        },
+            {
+                label: 'Pilots warned',
+                data: [373, 506, 711, 994, 2421, 2398, 1529, 2428, 1420],
+                borderColor: ["lightblue"],
+            }]
+
+    },
+    options: {
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Year 1990-2022'
+                },
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                grid: {
+                    display: false
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position: "bottom"
+            },
+            title: {
+                display: true,
+                text: 'Birdstrikes Yearly & Pilots warned'
+            }
+        }
+    },
+})
+
+
+
