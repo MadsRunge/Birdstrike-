@@ -2,25 +2,37 @@
 const ctx = document.querySelector('#chart').getContext('2d');
 
 const chart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Mourning dove', 'killdeer', 'Barn swallow', 'American kestrel', 'Gulls', 'Horned lark', 'European starling','Sparrows', 'Rock pigeon','Easten meadowlark'],
-        datasets: [{
-            label: "Mourning dove",
-            data: [13396, 8830, 8707, 8104, 7290, 7204, 5809, 4026, 3990, 3826],
-            backgroundColor:["red","green","green","green","green","green","green","green","green","green"]
-        }]
-    },
-    options: {
-        plugins: {
+        type: 'bar',
+        data: {
+            labels: ['Mourning dove', 'killdeer', 'Barn swallow', 'American kestrel', 'Gulls', 'Horned lark', 'European starling', 'Sparrows', 'Rock pigeon', 'Eastern meadowlark'],
+            datasets: [{
+                label: "Mourning dove",
+                data: [13396, 8830, 8707, 8104, 7290, 7204, 5809, 4026, 3990, 3826],
+                backgroundColor: ["red", "green", "green", "green", "green", "green", "green", "green", "green", "green"],
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    title: {
+                        display: true,
+                        text: "Number of birds killed"
+                    },
+                }
+            },
+            plugins: {
 
-            title: {
-                display: true,
-                text: "Most killed bird species by airplanes"
-            }
+                title: {
+                    display: true,
+                    text: "Most killed bird species by airplanes"
+                }
+            },
+
+            },
+
         }
-    }
-}
+
+
 
 );
 
@@ -70,6 +82,42 @@ const chart2 = new Chart(ctx2, {
         }
     },
 })
+const ctx3 = document.querySelector('#chart3').getContext('2d');
+
+const chart3 = new Chart(ctx3, {
+        type: 'bar',
+        data: {
+            labels: ['Approach', 'landing Roll', 'Take-off Run', 'Climb', 'En Route', 'Departure', 'Descent', 'Local', 'Arrival', 'Taxi','Parked'],
+            datasets: [{
+                label: "Phase of flight",
+                data: [70073, 30098, 28542, 25542, 4947, 2384, 2138, 953, 681, 618, 107],
+                backgroundColor: ["blue", "yellow", "yellow", "yellow", "yellow", "yellow", "yellow", "yellow", "yellow", "green","yellow"],
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    title: {
+                        display: true,
+                        text: "Number of incidents"
+                    },
+                }
+            },
+            plugins: {
+
+                title: {
+                    display: true,
+                    text: "Phase of flight with the most incidents"
+                }
+            },
+
+        },
+
+    }
+
+
+
+);
 
 
 
