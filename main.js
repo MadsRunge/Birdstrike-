@@ -16,7 +16,7 @@ const chart = new Chart(ctx, {
 
             title: {
                 display: true,
-                text: "Most killed bird species by airplanes (1990-1998"
+                text: "Most killed bird species by airplanes"
             }
         }
     }
