@@ -129,7 +129,7 @@ const chart4 = new Chart(ctx4, {
             data: [56, 96, 195, 88, 66, 50, 34, 86, 51],
             borderColor: ['red'],
         },
-           ]
+        ]
 
     },
     options: {
@@ -163,5 +163,4 @@ const chart4 = new Chart(ctx4, {
             }
         }
     },
-})
-
+});
