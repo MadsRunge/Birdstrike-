@@ -179,11 +179,20 @@ const chart5 = new Chart(ctx5, {
     data: {
         labels: ['Precautionary Landing', 'Aborted Take-off', 'Engine shutdown', 'Avoidance maneuver'],
         datasets: [{
-            label: 'Effects of birdstrikes',
+            label: 'Precautionary Landing',
             data: [7690, 2891, 2710, 487, 2708],
             backgroundColor: ['red', 'lightgrey', 'lightgrey', 'lightgrey', 'lightgrey', 'lightgrey']
         }],
 
+    },
+    options: {
+
+        plugins: {
+            title: {
+                display: true,
+                text: 'Effects of birdstrikes'
+            }
+        }
     },
 });
 
