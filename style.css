@@ -1,7 +1,13 @@
+body{
+    background-color: #318CE7;
+
+}
 .birdsSpecies {
     display: flex;
     width: 500px;
     height: 500px;
+
+
 }
 .incidents{
     display: flex;
