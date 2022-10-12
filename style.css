@@ -2,11 +2,17 @@
     display: flex;
     width: 500px;
     height: 500px;
+}
+.incidents{
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
 
-
-
-
-
+.birdStrikesYearly{
+    display: flex;
+    width: 500px;
+    height: 500px;
 }
 h1{
     text-align: center;
