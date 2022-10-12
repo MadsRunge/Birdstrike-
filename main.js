@@ -1,8 +1,8 @@
 
-const ctx = document.querySelector('#chart').getContext('2d');
+const ctx = document.querySelector('#chartbirdspicieskilled').getContext('2d');
 ctx.canvas.width = 1
 ctx.canvas.height = 1
-const chart = new Chart(ctx, {
+const chartbirdspicieskilled = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: ['Mourning dove', 'killdeer', 'Barn swallow', 'American kestrel', 'Gulls', 'Horned lark', 'European starling', 'Sparrows', 'Rock pigeon', 'Eastern meadowlark'],
@@ -38,10 +38,10 @@ const chart = new Chart(ctx, {
 );
 
 
-const ctx2 = document.querySelector('#chart2').getContext('2d');
+const ctx2 = document.querySelector('#chartbirdstrikesyearly').getContext('2d');
 ctx2.canvas.width = 1
 ctx2.canvas.height = 1
-const chart2 = new Chart(ctx2, {
+const chartbirdstrikesyearly = new Chart(ctx2, {
     type: 'line',
     data: {
         labels: ['1990', '1995', '2000', '2005', '2010', '2015', '2020', '2021', '2022'],
@@ -85,10 +85,10 @@ const chart2 = new Chart(ctx2, {
         }
     },
 })
-const ctx3 = document.querySelector('#chart3').getContext('2d');
+const ctx3 = document.querySelector('#chartphaseofflight').getContext('2d');
 ctx3.canvas.width = 1
 ctx3.canvas.height = 1
-const chart3 = new Chart(ctx3, {
+const chartphaseofflight = new Chart(ctx3, {
         type: 'bar',
         data: {
             labels: ['Approach', 'landing Roll', 'Take-off Run', 'Climb', 'En Route', 'Departure', 'Descent', 'Local', 'Arrival', 'Taxi','Parked'],
@@ -123,10 +123,10 @@ const chart3 = new Chart(ctx3, {
 
 );
 
-const ctx4 = document.querySelector('#chart4').getContext('2d');
+const ctx4 = document.querySelector('#chartAOS').getContext('2d');
 ctx4.canvas.width = 1
 ctx4.canvas.height = 1
-const chart4 = new Chart(ctx4, {
+const chartAOS = new Chart(ctx4, {
     type: 'line',
     data: {
         labels: ['1990', '1995', '2000', '2005', '2010', '2015', '2020', '2021', '2022'],
@@ -171,10 +171,10 @@ const chart4 = new Chart(ctx4, {
     },
 });
 
-const ctx5 = document.querySelector('#chart5').getContext('2d');
+const ctx5 = document.querySelector('#charteffects').getContext('2d');
 ctx5.canvas.width = 2
 ctx5.canvas.height = 2
-const chart5 = new Chart(ctx5, {
+const charteffects = new Chart(ctx5, {
     type: 'bar',
     data: {
         labels: ['Precautionary Landing', 'Aborted Take-off', 'Engine shutdown', 'Avoidance maneuver'],
