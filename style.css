@@ -68,3 +68,11 @@ h1{
     padding: 15px;
     background-color: white;
 }
+li{
+    font-size: x-large ;
+    list-style: none;
+}
+
+.questions{
+    text-align: center;
+}
